@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            font-family: Helvetica, sans-serif;
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+            background: #F0EEEB;
+        }
+        html, body, .container {
+            height: 100%;
+            width: 100%;
+        }
+        h1 {
+            margin: 0 0 0.8rem 0;
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+        a, a:active, a:visited {
+            text-decoration: none;
+        }
+        p, li {
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            margin-bottom: 1.6rem;
+            margin-left: 1.6rem;
+        }
+        li a {
+            padding: 0.8rem 1.6rem;
+            background: #18A48A;
+            color: white;
+            border-radius: 4px;
+            margin-right: 8px;
+            line-height: 1;
+            transition: background ease 0.2s;
+        }
+        li a:hover {
+            background: #128570;
+        }
+        .content {
+            padding: 2.4rem;
+        }
+        header {
+            background: #272B2C;
+            color: white;
+            padding: 3.2rem 2.4rem;
+        }
+        p {
+            margin: 0 0 1.6rem 0;
+        }
+        p:last-child {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dialog {
+            max-width: 80rem;
+            overflow: hidden;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dialog">
+            <header>
+                <h1>Welcome to the Neighborly Branding Kit Service</h1>
+                <h2>This service is used to redirect paths to different endpoints.</h2>
+            </header>
+            <div class="content">
+                <p>However, you've hit a URL that currently doesn't exist (sorry about that).</p>
+                <p><b>Here's some places that would be more helpful:</b></p>
+                <ul>
+                    <li>
+                        <a href="/">/</a>Our corporate branding
+                    </li>
+                    <li>
+                        <a href="/communities">/communities</a>Branding around communities
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
