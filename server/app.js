@@ -1,19 +1,26 @@
 // Vars
 const express = require('express');
 const app = express();
-const port = 80;
+const port = 4000;
 
-// Index
+
+/* ********************************
+    Redirection rules
+   ***************************** */
+
+// Main Company Branding Kit
 app.get('/', function (req, res) {
-    res.send('This is Coty Beasley\'s url redirection service.');
+    res.redirect(302, 'https://www.lingoapp.com/space/69180/k/6C9C777B-B432-4B4A-991F-B5E6336D7165/?tkn=jz03AMNFFmlESlpeb_XRpyHxDh3IPky_dLmZD0sfJ84');
 });
 
-/* Ireland photo book
-   Format: year-trip-asset-number
-   Example: 2016-ireland-video-0
- */
-app.get('/2016-ireland-video-0', function (req, res) {
-    res.redirect(302, 'https://www.youtube.com/watch?v=3JHUJHDRcHM');
+// Communities Branding Kit
+app.get('/communities', function (req, res) {
+    res.redirect(302, 'https://www.lingoapp.com/space/69180/k/7A050E3B-9B5A-4654-B621-0AF3254FAEFF?kit_token=PHaonH9BzTEtvSkJxlejkp4mba6v1fZmUdRGuG7Rv4g');
+});
+
+// Catchall
+app.get('*', function (req, res) {
+    res.send('<h1>This is the Neighborly Brand Kit url redirection service.</h1><p>This is the default endpoint, but you can reach other places from:</p><ul><li><a href="/neighborly">/neighborly</a> (Default company branding)</li><li> <a href="/communities">/communities</a> (Branding for various communities)</li></ul>');
 });
 
 // Port listening text
