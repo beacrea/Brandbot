@@ -85,6 +85,16 @@
             border-radius: 4px;
             box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
         }
+        @media only screen and (max-width: 800px) {
+            .container {
+                display: block;
+            }
+            .dialog {
+                background: none;
+                box-shadow: none;
+                border-radius: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,10 +109,10 @@
                 <p><b>Here's some places that would be more helpful:</b></p>
                 <ul>
                     <li>
-                        <a href="/">/</a>Our corporate branding
+                        <a href="/">/</a>Corporate Kit
                     </li>
                     <li>
-                        <a href="/communities">/communities</a>Branding around communities
+                        <a href="/communities">/communities</a>Communities Kit
                     </li>
                 </ul>
             </div>
