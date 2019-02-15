@@ -1,2 +1,2 @@
 # Neighborly Brand Property
-This project aims to provide a central location for branding assets to be used at Neighborly.
+This project aims to provide a [central location](https://brand.neighborly.com) for branding assets to be used at Neighborly.
