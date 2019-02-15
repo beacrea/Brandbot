@@ -21,7 +21,6 @@ app.get('/communities', function (req, res) {
 
 // Catchall
 app.get('*', function (req, res) {
-    // res.send('<h1>This is the Neighborly Brand Kit url redirection service.</h1><p>This is the default endpoint, but you can reach other places from:</p><ul><li><a href="/neighborly">/neighborly</a> (Default company branding)</li><li> <a href="/communities">/communities</a> (Branding for various communities)</li></ul>');
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
