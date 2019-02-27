@@ -19,6 +19,11 @@ app.get('/communities', function (req, res) {
     res.redirect(302, 'https://www.lingoapp.com/space/69180/k/7A050E3B-9B5A-4654-B621-0AF3254FAEFF?kit_token=PHaonH9BzTEtvSkJxlejkp4mba6v1fZmUdRGuG7Rv4g');
 });
 
+// Press Kit
+app.get('/press', function (req, res) {
+    res.redirect(302, 'https://www.lingoapp.com/space/69180/k/0D11FC7D-9358-4698-9268-B9BB8A8742D9?kit_token=sjD33Jr2cumkAMKmwUxRZIbMWoO-t59j0SKwMLsSd8g');
+});
+
 // Catchall
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
