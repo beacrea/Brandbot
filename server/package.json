@@ -4,7 +4,7 @@
   "description": "A server to redirect urls to various endpoints.",
   "main": "app.js",
   "scripts": {
-    "run": "node app.js"
+    "run": "node brandkit.js"
   },
   "repository": {
     "type": "git",
